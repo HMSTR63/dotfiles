@@ -8,8 +8,8 @@ return {
         config = function()
             vim.g.barbar_auto_setup = false
             -- Move to previous/next
-            vim.keymap.set("n", "<C-a>", ': BufferPrevious<CR>', { noremap = true, silent = true })
-            vim.keymap.set("n", "<C-d>", ': BufferNext<CR>', { noremap = true, silent = true })
+            vim.keymap.set("n", "<A-a>", "<Cmd>BufferPrevious<CR>", { noremap = true, silent = true })
+            vim.keymap.set("n", "<A-d>", "<Cmd>BufferNext<CR>", { noremap = true, silent = true })
         end,
         opts = {
             -- lazy.nvim will automatically call setup for you. put your options here, anything missing will use the default:
