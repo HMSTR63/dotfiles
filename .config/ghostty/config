@@ -1,0 +1,17 @@
+# This is the configuration file for Ghostty.
+#
+theme = Catppuccin Mocha
+font-size = 12
+# This template file has been automatically created at the following
+# path since Ghostty couldn't find any existing config files on your system:
+#
+background-blur-radius = 50
+mouse-hide-while-typing = true
+window-decoration = false
+keybind = ctrl+q=quit
+background-opacity = 0.9
+window-width = 189
+window-height = 46
+#   /home/ux-hmstr/.config/ghostty/config
+#
+# The template does not set any default options, since Ghostty ships
