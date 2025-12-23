@@ -23,3 +23,4 @@ vim.g.loaded_ruby_provider = 0
 
 vim.keymap.set("n", "<leader>sr", [[:%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left><Left>]], { desc = "Search and replace word under cursor" })
 
+
