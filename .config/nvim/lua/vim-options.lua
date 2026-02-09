@@ -7,7 +7,7 @@ vim.opt.smartindent = true -- Smart indenting for C-like languages
 vim.opt.number = true -- Show current line number
 vim.opt.relativenumber = true -- Show relative line numbers
 vim.opt.cursorline = true -- Highlight the current line
-vim.opt.mouse = 'a' -- Enable mouse support
+vim.opt.mouse = "a" -- Enable mouse support
 
 vim.g.mapleader = " "
 vim.g.user = "sojammali"
@@ -21,6 +21,9 @@ vim.opt.scrolloff = 8
 vim.g.loaded_perl_provider = 0
 vim.g.loaded_ruby_provider = 0
 
-vim.keymap.set("n", "<leader>sr", [[:%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left><Left>]], { desc = "Search and replace word under cursor" })
-
-
+vim.keymap.set(
+	"n",
+	"<leader>sr",
+	[[:%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left><Left>]],
+	{ desc = "Search and replace word under cursor" }
+)

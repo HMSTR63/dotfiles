@@ -8,6 +8,8 @@ return {
       dashboard = { enabled = false },
       indent = { enabled = true },
       input = { enabled = true },
+      picker = { enabled = true },
+      terminal = { enabled = true },
       notifier = { enabled = true },
       quickfile = { enabled = true },
       scroll = { enabled = true },

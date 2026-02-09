@@ -16,6 +16,17 @@ return {
       lua = { "stylua" },
       c = { "clang_format" },
       cpp = { "clang_format" },
+      javascript = { "prettier" },
+      typescript = { "prettier" },
+      javascriptreact = { "prettier" },
+      typescriptreact = { "prettier" },
+      html = { "prettier" },
+      css = { "prettier" },
+      json = { "prettier" },
+      yaml = { "prettier" },
+      markdown = { "prettier" },
+      python = { "isort", "black" },
+      go = { "gofmt" },
     },
     formatters = {
       clang_format = {

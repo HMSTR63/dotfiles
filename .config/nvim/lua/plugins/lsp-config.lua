@@ -62,7 +62,20 @@ return {
 
 			-- Use mason-lspconfig to set up servers
 			require("mason-lspconfig").setup({
-				ensure_installed = { "lua_ls", "clangd" }, -- Add other LSPs you want Mason to install and manage here
+				ensure_installed = {
+					"lua_ls",
+					"clangd",
+					"ts_ls",
+					"html",
+					"cssls",
+					"dockerls",
+					"docker_compose_language_service",
+					"pyright",
+					"gopls",
+					"rust_analyzer",
+					"jsonls",
+					"yamlls",
+				}, -- Add other LSPs you want Mason to install and manage here
 				handlers = {
 					function(server_name)
 						lspconfig[server_name].setup({

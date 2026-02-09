@@ -10,6 +10,11 @@ return {
       ensure_installed = {
         "stylua",
         "clang-format",
+        "prettier",
+        "black",
+        "isort",
+        "hadolint",
+        "eslint_d",
       },
     })
   end,
