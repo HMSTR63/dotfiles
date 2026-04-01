@@ -1,8 +1,2 @@
 {
-  "$schema": "https://opencode.ai/config.json",
-  "plugin": [
-    "opencode-gemini-auth",
-    "opencode-skills"
-  ],
-  "theme": "catppuccin mocha"
-}
+  "$schema": "https://opencode.ai/config.json", "plugin": ["opencode-google-antigravity-auth"], "theme": "catppuccin-mocha" }

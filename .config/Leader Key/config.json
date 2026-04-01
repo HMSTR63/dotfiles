@@ -1,0 +1,370 @@
+{
+  "type": "group",
+  "actions": [
+    {
+      "key": "enter",
+      "label": "Fast Terminal",
+      "type": "application",
+      "value": "/Applications/Ghostty.app"
+    },
+    {
+      "key": "t",
+      "label": "Ghostty",
+      "type": "application",
+      "value": "/Applications/Ghostty.app"
+    },
+    {
+      "key": "b",
+      "label": "Brave",
+      "type": "application",
+      "value": "/Applications/Brave Browser.app"
+    },
+    {
+      "key": "d",
+      "label": "Discord",
+      "type": "application",
+      "value": "/Applications/Discord.app"
+    },
+    {
+      "key": "s",
+      "label": "Spotify",
+      "type": "application",
+      "value": "/Applications/Spotify.app"
+    },
+    {
+      "key": "a",
+      "label": "Antigravity",
+      "type": "application",
+      "value": "/Applications/Antigravity.app"
+    },
+
+    {
+      "key": "m",
+      "label": "Spotify Master 🎧",
+      "type": "group",
+      "iconPath": "music.note.list",
+      "actions": [
+        {
+          "key": "l",
+          "label": "Your Library (My Playlists)",
+          "type": "url",
+          "value": "raycast://extensions/mattisssa/spotify-player/yourLibrary"
+        },
+        {
+          "key": "space",
+          "label": "Play / Pause",
+          "type": "url",
+          "value": "raycast://extensions/mattisssa/spotify-player/togglePlayPause"
+        },
+        {
+          "key": "n",
+          "label": "Next Track",
+          "type": "url",
+          "value": "raycast://extensions/mattisssa/spotify-player/next"
+        },
+        {
+          "key": "p",
+          "label": "Previous Track",
+          "type": "url",
+          "value": "raycast://extensions/mattisssa/spotify-player/previous"
+        },
+        {
+          "key": "s",
+          "label": "Toggle Shuffle",
+          "type": "url",
+          "value": "raycast://extensions/mattisssa/spotify-player/toggleShuffle"
+        },
+        {
+          "key": "r",
+          "label": "Start Radio",
+          "type": "url",
+          "value": "raycast://extensions/mattisssa/spotify-player/startRadio"
+        },
+        {
+          "key": "v",
+          "label": "Volume Control",
+          "type": "group",
+          "iconPath": "speaker.wave.3",
+          "actions": [
+            {
+              "key": "k",
+              "label": "Volume Up (+10%)",
+              "type": "url",
+              "value": "raycast://extensions/mattisssa/spotify-player/turnVolumeUp"
+            },
+            {
+              "key": "j",
+              "label": "Volume Down (-10%)",
+              "type": "url",
+              "value": "raycast://extensions/mattisssa/spotify-player/turnVolumeDown"
+            },
+            {
+              "key": "m",
+              "label": "Mute (0%)",
+              "type": "url",
+              "value": "raycast://extensions/mattisssa/spotify-player/setVolume0"
+            }
+          ]
+        }
+      ]
+    },
+
+    {
+      "key": "j",
+      "label": "Window Borders (Cyan)",
+      "type": "group",
+      "iconPath": "square.and.line.vertical.and.square",
+      "actions": [
+        {
+          "key": "s",
+          "label": "Start/Restart (Cyan)",
+          "type": "command",
+          "value": "/opt/homebrew/bin/brew services restart borders"
+        },
+        {
+          "key": "q",
+          "label": "Stop Borders",
+          "type": "command",
+          "value": "/opt/homebrew/bin/brew services stop borders"
+        },
+        {
+          "key": "e",
+          "label": "Edit Config",
+          "type": "command",
+          "value": "open -a Ghostty ~/.config/borders/bordersrc"
+        }
+      ]
+    },
+
+    {
+      "key": "r",
+      "label": "Raycast Tools",
+      "type": "group",
+      "iconPath": "magnifyingglass",
+      "actions": [
+        {
+          "key": "c",
+          "label": "Clipboard History",
+          "type": "url",
+          "value": "raycast://extensions/raycast/clipboard-history/clipboard-history"
+        },
+        {
+          "key": "k",
+          "label": "Kill Process",
+          "type": "url",
+          "value": "raycast://extensions/raycast/system/kill-process"
+        },
+        {
+          "key": "n",
+          "label": "Floating Note",
+          "type": "url",
+          "value": "raycast://extensions/raycast/floating-notes/toggle-floating-notes-focus"
+        },
+        {
+          "key": "e",
+          "label": "Emoji Picker",
+          "type": "url",
+          "value": "raycast://extensions/raycast/emoji-symbols/search-emoji-symbols"
+        },
+        {
+          "key": "l",
+          "label": "Lock Screen",
+          "type": "url",
+          "value": "raycast://extensions/raycast/system/lock-screen"
+        },
+        {
+          "key": "s",
+          "label": "Sleep Mac",
+          "type": "url",
+          "value": "raycast://extensions/raycast/system/sleep"
+        }
+      ]
+    },
+
+    {
+      "key": "f",
+      "label": "Folders (Finder)",
+      "type": "group",
+      "iconPath": "folder",
+      "actions": [
+        {
+          "key": "d",
+          "label": "Downloads",
+          "type": "folder",
+          "value": "~/Downloads"
+        },
+        { "key": "h", "label": "Home", "type": "folder", "value": "~/" },
+        {
+          "key": "a",
+          "label": "Applications",
+          "type": "folder",
+          "value": "/Applications"
+        }
+      ]
+    },
+
+    {
+      "key": "l",
+      "label": "Web Links",
+      "type": "group",
+      "iconPath": "link",
+      "actions": [
+        {
+          "key": "g",
+          "label": "GitHub",
+          "type": "url",
+          "value": "https://github.com"
+        },
+        {
+          "key": "i",
+          "label": "Intra 1337",
+          "type": "url",
+          "value": "https://intra.42.fr"
+        }
+      ]
+    },
+
+    {
+      "key": "w",
+      "label": "AeroSpace (Windows)",
+      "type": "group",
+      "iconPath": "rectangle.grid.2x2",
+      "actions": [
+        {
+          "key": "1",
+          "label": "Workspace h1",
+          "type": "command",
+          "value": "/opt/homebrew/bin/aerospace workspace h1"
+        },
+        {
+          "key": "2",
+          "label": "Workspace h2",
+          "type": "command",
+          "value": "/opt/homebrew/bin/aerospace workspace h2"
+        },
+        {
+          "key": "3",
+          "label": "Workspace h3",
+          "type": "command",
+          "value": "/opt/homebrew/bin/aerospace workspace h3"
+        },
+        {
+          "key": "4",
+          "label": "Workspace h4",
+          "type": "command",
+          "value": "/opt/homebrew/bin/aerospace workspace h4"
+        },
+        {
+          "key": "5",
+          "label": "Workspace h5",
+          "type": "command",
+          "value": "/opt/homebrew/bin/aerospace workspace h5"
+        },
+        {
+          "key": "h",
+          "label": "Focus Left",
+          "type": "command",
+          "value": "/opt/homebrew/bin/aerospace focus left"
+        },
+        {
+          "key": "j",
+          "label": "Focus Down",
+          "type": "command",
+          "value": "/opt/homebrew/bin/aerospace focus down"
+        },
+        {
+          "key": "k",
+          "label": "Focus Up",
+          "type": "command",
+          "value": "/opt/homebrew/bin/aerospace focus up"
+        },
+        {
+          "key": "l",
+          "label": "Focus Right",
+          "type": "command",
+          "value": "/opt/homebrew/bin/aerospace focus right"
+        },
+        {
+          "key": "f",
+          "label": "Toggle Floating",
+          "type": "command",
+          "value": "/opt/homebrew/bin/aerospace layout floating tiling"
+        },
+        {
+          "key": "v",
+          "label": "Vertical Split",
+          "type": "command",
+          "value": "/opt/homebrew/bin/aerospace layout tiles vertical"
+        },
+        {
+          "key": "r",
+          "label": "Reload Config",
+          "type": "command",
+          "value": "/opt/homebrew/bin/aerospace reload-config"
+        },
+        {
+          "key": "m",
+          "label": "Move Window...",
+          "type": "group",
+          "iconPath": "arrow.up.and.down.and.arrow.left.and.right",
+          "actions": [
+            {
+              "key": "h",
+              "label": "Move Left",
+              "type": "command",
+              "value": "/opt/homebrew/bin/aerospace move left"
+            },
+            {
+              "key": "j",
+              "label": "Move Down",
+              "type": "command",
+              "value": "/opt/homebrew/bin/aerospace move down"
+            },
+            {
+              "key": "k",
+              "label": "Move Up",
+              "type": "command",
+              "value": "/opt/homebrew/bin/aerospace move up"
+            },
+            {
+              "key": "l",
+              "label": "Move Right",
+              "type": "command",
+              "value": "/opt/homebrew/bin/aerospace move right"
+            },
+            {
+              "key": "1",
+              "label": "To Workspace h1",
+              "type": "command",
+              "value": "/opt/homebrew/bin/aerospace move-node-to-workspace h1"
+            },
+            {
+              "key": "2",
+              "label": "To Workspace h2",
+              "type": "command",
+              "value": "/opt/homebrew/bin/aerospace move-node-to-workspace h2"
+            },
+            {
+              "key": "3",
+              "label": "To Workspace h3",
+              "type": "command",
+              "value": "/opt/homebrew/bin/aerospace move-node-to-workspace h3"
+            },
+            {
+              "key": "4",
+              "label": "To Workspace h4",
+              "type": "command",
+              "value": "/opt/homebrew/bin/aerospace move-node-to-workspace h4"
+            },
+            {
+              "key": "5",
+              "label": "To Workspace h5",
+              "type": "command",
+              "value": "/opt/homebrew/bin/aerospace move-node-to-workspace h5"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
